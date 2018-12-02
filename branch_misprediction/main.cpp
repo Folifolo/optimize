@@ -17,13 +17,13 @@ int main(int argc, char* argv[])
 
     long long sum = 0;
 
-    for (unsigned i = 0; i < 10000; ++i)
+    for (unsigned i = 0; i < 400000; ++i)
     {
         for (unsigned c = 0; c < arraySize-1; ++c)
         {
 			if (data[c] >= 128)
 			{
-				if (data[c]%7 >= data[c+1]%7)
+				if (data[c] <= 200)
 					sum += data[c];
 			}
         }
